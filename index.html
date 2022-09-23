@@ -12,9 +12,55 @@
 </head>
 <body>
     <section>
-        <img src="img/img/first.jpg" alt="header-img" id="first">
-        <img src="img/img/last.png" alt="footer-img" id="last">
-        <h1 class="text">Parallax</h1>
+        <img src="img/img/first.jpg" alt="header-img" id="first" class="first">
+        <img src="img/img/last.png" alt="footer-img" id="last" class="last">
+        <h1 id="text" class="text">Forest</h1>
     </section>
+    <div class="ab-text">
+        <div class="heading">
+            <h2>Photography</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel perferendis quas inventore totam eius iusto. Modi exercitationem magnam quo voluptatum dolores explicabo quibusdam facere consectetur, aliquam deserunt ratione iste. Reiciendis nostrum, doloremque impedit saepe unde quia laudantium eveniet. Ab saepe optio, provident possimus doloribus inventore praesentium magni. Non, qui assumenda?</p>
+        </div>
+        <div class="container">
+            <div class="box box1">
+                <div class="in">
+                    <p>like</p>
+                </div>
+            </div>
+
+            <div class="box box2">
+                <div class="in">
+                    <p>share &</p>
+                </div>
+            </div>
+
+            <div class="box box3">
+                <div class="in">
+                    <p>Subscribe</p>
+                </div>
+            </div>
+
+            <div class="box box1">
+                <div class="in">
+                    <p>Comment</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>2022. design with by Bijoy Biswas</p>
+        </div>
+    </div>
+    <script>
+        let first = document.getElementById("first");
+        let last = document.getElementById("last");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function() {
+            var value = window.scrollY;
+            first.style.top = value * 0.7 + 'px';
+            last.style.bottom = value * 0.5 + 'px';
+            text.style.top = value * 1 + 'px';
+        })
+    </script>
 </body>
 </html>
